@@ -39,7 +39,10 @@ export default function Callback() {
       setCookie('userPhoto', userData.picture, { maxAge: 3600 })
       setCookie('accessToken', accessToken, { maxAge: 3600 })
 
-      window.location.href = '/'
+      const gclientId =
+        'VkezlM4C4puMb-3jcawHMaoXqKw4E1qswp5Fy6g1pid_lopVo-URcgj50KQZaOh_'
+
+      window.location.href = `https://api.genius.com/oauth/authorize?client_id=${gclientId}&redirect_uri=http://localhost:5173/gcallback&scope=me&response_type=token`
     }
     fetchToken()
   }, [code, clientId, clientST])
