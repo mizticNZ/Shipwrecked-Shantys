@@ -6,11 +6,16 @@ const Search = () => {
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     try {
       e.preventDefault()
-      //actually do the thing to look up the song
+      const search = searchParam + 'lyric Video'
+      //search youtube
     } catch (err: unknown) {
       console.error(err)
     }
   }
+
+  const addToPlaylist = async () => {}
+
+  const playNow = async () => {}
 
   return (
     <div>
@@ -22,6 +27,12 @@ const Search = () => {
           value={searchParam}
           onChange={(e) => setSearchParam(e.target.value)}
         />
+        <button value="add To Playlist" onClick={addToPlaylist}>
+          Add To Playlist
+        </button>
+        <button value="Play" onClick={playNow}>
+          Play Now
+        </button>
       </form>
     </div>
   )
