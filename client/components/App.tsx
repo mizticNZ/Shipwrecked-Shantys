@@ -1,18 +1,23 @@
-import { useFruits } from '../hooks/useFruits.ts'
+import { useCookies } from 'react-cookie'
+import { Link } from 'react-router-dom'
 import Search from './Search.tsx'
 
 function App() {
-  const { data } = useFruits()
+  const [cookies, setCookie] = useCookies(['accessToken'])
 
-  return (
-    <>
-      {/* <div className="app">
-        <h1>Fullstack Boilerplate - with Fruits!</h1>
-        <ul>{data && data.map((fruit) => <li key={fruit}>{fruit}</li>)}</ul>
-      </div> */}
-      <Search />
-    </>
-  )
+  if (!cookies.accessToken) {
+    return (
+      <div className="app">
+        <Link to="/connect">Connect to Google</Link>
+      </div>
+    )
+  } else {
+    return (
+      <div className="app">
+        <Search />
+      </div>
+    )
+  }
 }
 
 export default App
