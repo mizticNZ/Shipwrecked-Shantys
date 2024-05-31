@@ -21,10 +21,16 @@ const Search = () => {
       const data = await response.json()
       console.log(data.items)
       setSearchResults(data.items)
+      const search = searchParam + 'lyric Video'
+      //search youtube
     } catch (err: unknown) {
       console.error(err)
     }
   }
+
+  const addToPlaylist = async () => {}
+
+  const playNow = async () => {}
 
   return (
     <div>
@@ -36,6 +42,12 @@ const Search = () => {
           value={searchParam}
           onChange={(e) => setSearchParam(e.target.value)}
         />
+        <button value="add To Playlist" onClick={addToPlaylist}>
+          Add To Playlist
+        </button>
+        <button value="Play" onClick={playNow}>
+          Play Now
+        </button>
       </form>
       {Array.isArray(searchResults) && searchResults.length > 0 && (
         <ul>
