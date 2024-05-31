@@ -7,7 +7,8 @@ const Connect = () => {
   const [authUrl, setAuthUrl] = useState('')
 
   useEffect(() => {
-    const scope = 'profile email'
+    const scope =
+      'https://www.googleapis.com/auth/youtube.readonly profile email'
     const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${clientId}&redirect_uri=http://localhost:5173/callback&scope=${scope}&response_type=code`
     setAuthUrl(authUrl)
     window.location.href = authUrl
