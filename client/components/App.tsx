@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Search from './Search.tsx'
 import Header from './Header.tsx'
 import Lyrics from './Lyrics.tsx'
+import Playlist from './Playlist.tsx'
 
 function App() {
   const [cookies, setCookie] = useCookies(['accessToken'])
@@ -19,6 +20,7 @@ function App() {
         <Header />
         <Search />
         <Lyrics />
+        <Playlist />
       </div>
     )
   }
