@@ -28,7 +28,7 @@ const Lyrics = () => {
   return (
     <div className="container">
       <section className="lyrics" ref={lyr}>
-        <p>Get ready to sing lads</p>
+        <p>Let's sing!</p>
       </section>
       <section className="title" ref={title}>
         <img src={ShipwreckedShantys} alt="space shipwrecked shantys" />
@@ -40,13 +40,13 @@ const Lyrics = () => {
           <p>Hard to see, ooh</p>
           <p>The hang ups we have today</p>
           <p>Said we need to strive for more liberty</p>
-          <p>Lift yourself upon your feet, let&aposs get it on</p>
-          <p>Lift yourself upon your feet, let&aposs get it on</p>
-          <p>Lift yourself upon your feet, let&aposs get it on</p>
-          <p>Lift yourself upon your feet, let&aposs get it on</p>
-          <p>Lift yourself upon your feet, let&aposs get it on</p>
-          <p>Lift yourself upon your feet, let&aposs get it on</p>
-          <p>Lift yourself upon your feet, let&aposs get it on</p>
+          <p>Lift yourself upon your feet, let`s get it on</p>
+          <p>Lift yourself upon your feet, let`s get it on</p>
+          <p>Lift yourself upon your feet, let`s get it on</p>
+          <p>Lift yourself upon your feet, let`s get it on</p>
+          <p>Lift yourself upon your feet, let`s get it on</p>
+          <p>Lift yourself upon your feet, let`s get it on</p>
+          <p>Lift yourself upon your feet, let`s get it on</p>
           <p>The hang ups we have today</p>
           <p>Said we need to strive for more liberty</p>
           <p>Lift yourself upon your feet</p>
@@ -56,7 +56,7 @@ const Lyrics = () => {
           <p>Lift, lift your, lift your, lift your, lift your, lift, lift</p>
           <p>Hard to see, ooh</p>
           <p>The hang ups we have today-ay-ay</p>
-          <p>But they don&apost really realize, though</p>
+          <p>But they don`t really realize, though</p>
           <p>This next verse, this next verse though</p>
           <p>These bars</p>
           <p>Watch this some shit, go</p>

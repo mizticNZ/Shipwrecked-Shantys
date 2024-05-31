@@ -37,8 +37,7 @@ div[id='root'] {
 }
 .container {
   height: 100vh;
-  position: relative;
-  width: 100%;
+  overflow: hidden;
 }
 
 .lyrics,
@@ -63,7 +62,7 @@ div[id='root'] {
   width: 18rem;
 }
 
-.container:before {
+.container::before {
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 1) 0%,
@@ -75,8 +74,8 @@ div[id='root'] {
   content: ' ';
   left: 0;
   right: 0;
-  position: aboslute;
-  top: 0;
+  position: absolute;
+  top: 10px;
   z-index: 100;
 }
 
@@ -84,16 +83,19 @@ div[id='root'] {
   font-size: 300%;
   bottom: 0;
   height: 80rem;
-  left: -100%;
+  left: 50%;
   position: absolute;
-  transform: translateX(-50) perspective(300px) rotateX(28deg);
+  transform: translateX(-50) perspective(300px) rotateX(25deg);
   transform-origin: 50% 100%;
-  width: 400%;
+  width: 100%;
 }
 
 .content {
   position: absolute;
   top: 100%;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-100%);
 }
 
 .artist {
@@ -116,5 +118,9 @@ div[id='root'] {
   font-weight: 700;
   line-height: 1.33;
   margin-bottom: 4rem;
-  text-align: left;
+  text-align: center;
+}
+
+.form {
+  z-index: 99999;
 }

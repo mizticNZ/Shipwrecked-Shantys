@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../styles/lyrics.css'
 
 const Search = () => {
   const [searchParam, setSearchParam] = useState('')
@@ -19,7 +20,7 @@ const Search = () => {
 
   return (
     <div>
-      <form onSubmit={onSubmit}>
+      <form className="form" onSubmit={onSubmit}>
         <input
           type="text"
           required
