@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../styles/lyrics.css'
 import { useCookies } from 'react-cookie'
 
 const Search = () => {
@@ -34,7 +35,7 @@ const Search = () => {
 
   return (
     <div>
-      <form onSubmit={onSubmit}>
+      <form className="form" onSubmit={onSubmit}>
         <input
           type="text"
           required
