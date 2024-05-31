@@ -7,7 +7,6 @@ import {
 import App from './components/App'
 import Connect from '../client/components/Connect'
 import Callback from '../client/components/Callback'
-import GCallback from './components/GCallback'
 
 const router = createBrowserRouter(
   createRoutesFromElements([
@@ -15,7 +14,6 @@ const router = createBrowserRouter(
       <Route path="/" element={<App />} />
       <Route path="connect" element={<Connect />} />
       <Route path="callback" element={<Callback />} />
-      <Route path="gCallback" element={<GCallback />} />
     </>,
   ]),
 )
